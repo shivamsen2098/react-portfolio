@@ -1,36 +1,4 @@
-// import Navbar from "./components/Navbar";
-// import Hero from "./components/Hero";
-// import About from "./components/About";
-// import Projects from "./components/Projects";
-// import Contact from "./components/Contact";
-// import Skills from "./components/Skills";
-// import Services from "./components/Services";
-// import Testimonials from "./components/Testimonial";
-// import Testimonial from "./components/Testimonial";
-// import FAQ from "./components/FAQ";
-// import Footer from "./components/Footer";
 
-// function App() {
-//   return (
-//     <>
-//       <Navbar />
-//       <Hero />
-//       <About />
-//       <Skills />
-//       <Projects />
-//       <Services />
-//       <Testimonial />
-//       <FAQ />
-//       <Contact />
-//       <Footer />
-//     </>
-//   );
-// }
-
-// export default App;
-
-
-// App.js - Main component for the portfolio landing page
 import React from 'react';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Home from './pages/Home';
@@ -39,6 +7,11 @@ import Projects from './pages/Projects';
 import Contact from './pages/Contact';
 import Services from './pages/Services';
 import Layout from './Layout';
+import ExcelDataAnalysis from './pages/ExcelDataAnalysis';
+import WebDevelopmentProject from './pages/WebProject';
+import BasicWebProjects from './pages/BasicWebProjects';
+import ResponsiveWebProjects from './pages/ResponsiveWebProjects';
+import TextAnimator from './pages/TextAnimator';
 
 const router = createBrowserRouter([
   {
@@ -50,6 +23,10 @@ const router = createBrowserRouter([
       { path: 'projects', element: <Projects /> },
       { path: 'contact', element: <Contact /> },
       { path: 'services', element: <Services /> },
+      { path: 'excel-data-analysis', element: <ExcelDataAnalysis /> },
+      { path: 'basic-web-projects', element: <BasicWebProjects /> },
+      { path: 'responsive-web-projects', element: <ResponsiveWebProjects /> },
+      { path: 'text-animator', element: <TextAnimator /> },
     ],
   },
 ]);

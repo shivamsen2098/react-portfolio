@@ -25,7 +25,7 @@ export default function About() {
                             <span className="text-4xl">👋</span> Hello! I'm Shivam Sen
                         </h3>
                         <p className="text-xl text-gray-700 dark:text-gray-300 mb-6 leading-relaxed">
-                            I am a fresher web developer with a strong interest in creating clean and user-friendly websites. I have a good understanding of <span className="font-bold text-cyan-600 dark:text-cyan-400 underline decoration-wavy">HTML, CSS, and JavaScript</span>.
+                            I am a fresher web developer with a strong interest in creating clean and user-friendly websites. I have a good understanding of <span className="font-bold text-cyan-600 dark:text-cyan-400 underline decoration-wavy">HTML, CSS, JavaScript, Bootstrap, Tailwind CSS, React, and Next.js</span>.
                         </p>
                         <p className="text-xl text-gray-700 dark:text-gray-300 mb-12 leading-relaxed">
                             My goal is to start my career as a frontend developer where I can apply my knowledge, keep growing, and contribute to responsive web projects.
@@ -39,9 +39,9 @@ export default function About() {
                                 <svg className="w-6 h-6 group-hover:animate-bounce" fill="currentColor" viewBox="0 0 20 20">
                                     <path fillRule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clipRule="evenodd" />
                                 </svg>
-                                Download Resume
+                                <a href="files/resume-Shivam-portfolio.pdf" class="btn btn-outline">Download CV</a>
                             </a>
-                            <a
+                            {/* <a
                                 href="#"
                                 className="group border-3 border-cyan-500 text-cyan-500 px-10 py-5 rounded-2xl font-bold hover:bg-cyan-500 hover:text-white transition-all duration-300 transform hover:scale-110 hover:-rotate-1 shadow-2xl hover:shadow-cyan-500/50 flex items-center gap-3 backdrop-blur-sm bg-white/10 dark:bg-gray-800/10"
                             >
@@ -49,7 +49,7 @@ export default function About() {
                                     <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
                                 </svg>
                                 Read More
-                            </a>
+                            </a> */}
                         </div>
                     </div>
 
@@ -63,8 +63,12 @@ export default function About() {
                                 className="relative rounded-3xl shadow-2xl mx-auto transform group-hover:scale-110 group-hover:rotate-2 transition-all duration-500 border-4 border-white dark:border-gray-700 w-full max-w-lg"
                             />
                             {/* Floating Badges */}
-                            <div className="absolute -top-6 -left-6 bg-gradient-to-r from-cyan-500 to-blue-500 text-white p-4 rounded-full shadow-xl animate-bounce">
-                                <span className="font-bold text-sm">💻 Code</span>
+                            <div className="absolute -top-6 -left-6 bg-gradient-to-r cursor-pointer from-cyan-500 to-blue-500 text-white p-4 rounded-full shadow-xl animate-bounce">
+
+                                <a href="https://github.com/shivamsen2098" class="btn btn-outline">
+                                    <span className="font-bold text-sm">💻 Code</span>
+                                </a>
+
                             </div>
                             <div className="absolute -bottom-6 -right-6 bg-gradient-to-r from-purple-500 to-pink-500 text-white p-4 rounded-full shadow-xl animate-pulse">
                                 <span className="font-bold text-sm">🚀 Innovate</span>

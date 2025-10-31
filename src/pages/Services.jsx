@@ -1,24 +1,7 @@
+import { Link } from "react-router-dom";
 import Header from "../components/Header";
 
 export default function Services() {
-  const services = [
-    {
-      icon: "fas fa-laptop-code",
-      title: "Web Development",
-      desc: "Custom website development with modern technologies and best practices.",
-    },
-    {
-      icon: "fas fa-palette",
-      title: "UI/UX Design",
-      desc: "User-centered design solutions that enhance usability and engagement.",
-    },
-    {
-      icon: "fas fa-mobile-alt",
-      title: "Responsive Design",
-      desc: "Websites that work perfectly on all devices and screen sizes.",
-    },
-  ];
-
   return (
     <>
       <section
@@ -38,40 +21,91 @@ export default function Services() {
           </h2>
 
           <div className="grid gap-12 sm:grid-cols-2 lg:grid-cols-3">
-            {services.map(({ icon, title, desc }, idx) => (
-              <div
-                key={idx}
-                className="group relative bg-white/80 dark:bg-gray-800/80 backdrop-blur-lg p-8 rounded-3xl shadow-2xl border border-gray-200 dark:border-gray-700 transform hover:scale-105 hover:-rotate-1 transition-all duration-500 hover:shadow-cyan-500/30"
-              >
-                {/* Icon */}
+            {/* Basic Web */}
+            <Link to="/basic-web-projects">
+              <div className="group relative bg-white/80 dark:bg-gray-800/80 backdrop-blur-lg p-8 rounded-3xl shadow-2xl border border-gray-200 dark:border-gray-700 transform hover:scale-105 hover:-rotate-1 transition-all duration-500 hover:shadow-cyan-500/30 cursor-pointer">
                 <div className="flex justify-center mb-6">
-                  <div className="bg-gradient-to-r from-cyan-500 to-purple-600 p-4 rounded-full shadow-lg group-hover:scale-110 transition-transform duration-300">
-                    <i className={`${icon} text-4xl text-white`}></i>
+                  <div className="w-20 h-20 rounded-full overflow-hidden bg-white group-hover:scale-110 transition-transform duration-300">
+                    <img
+                      src="/images/services/webdev.jpg"
+                      alt="Web Development"
+                      className="w-full h-full object-contain p-2"
+                    />
                   </div>
                 </div>
-                {/* Title */}
                 <h3 className="text-2xl font-bold mb-4 text-gray-800 dark:text-white text-center">
-                  {title}
+                  Basic Web
                 </h3>
-                {/* Description */}
                 <p className="text-gray-600 dark:text-gray-300 mb-8 text-center leading-relaxed">
-                  {desc}
+                  Custom website development with modern technologies and best practices.
                 </p>
-                {/* Button */}
-                <div className="text-center">
-                  <a
-                    href="#contact"
-                    className="inline-block bg-gradient-to-r from-cyan-500 to-purple-600 text-white px-8 py-4 rounded-full font-semibold hover:from-cyan-600 hover:to-purple-700 transition-all duration-300 transform hover:scale-110 shadow-xl hover:shadow-cyan-500/50"
-                  >
-                    Hire Me
-                  </a>
+              </div>
+            </Link>
+
+            {/* Responsive Design */}
+            <Link to="/responsive-web-projects">
+              <div className="group relative bg-white/80 dark:bg-gray-800/80 backdrop-blur-lg p-8 rounded-3xl shadow-2xl border border-gray-200 dark:border-gray-700 transform hover:scale-105 hover:-rotate-1 transition-all duration-500 hover:shadow-cyan-500/30 cursor-pointer">
+                <div className="flex justify-center mb-6">
+                  <div className="w-20 h-20 rounded-full overflow-hidden bg-white group-hover:scale-110 transition-transform duration-300">
+                    <img
+                      src="/images/services/responsive.webp"
+                      alt="Responsive Design"
+                      className="w-full h-full object-contain p-2"
+                    />
+                  </div>
                 </div>
-                {/* Floating Badge */}
-                <div className="absolute -top-4 -right-4 bg-gradient-to-r from-pink-500 to-red-500 text-white px-3 py-1 rounded-full text-sm font-bold shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500 animate-bounce">
-                  {idx + 1}
+                <h3 className="text-2xl font-bold mb-4 text-gray-800 dark:text-white text-center">
+                  Responsive Web Design
+                </h3>
+                <p className="text-gray-600 dark:text-gray-300 mb-8 text-center leading-relaxed">
+                  Websites that work perfectly on all devices and screen sizes.
+                </p>
+              </div>
+            </Link>
+
+
+            {/* UI/UX Design */}
+            <div className="group relative bg-white/80 dark:bg-gray-800/80 backdrop-blur-lg p-8 rounded-3xl shadow-2xl border border-gray-200 dark:border-gray-700 transform hover:scale-105 hover:-rotate-1 transition-all duration-500 hover:shadow-cyan-500/30 cursor-pointer">
+              <div className="flex justify-center mb-6">
+                <div className="w-20 h-20 rounded-full overflow-hidden bg-white group-hover:scale-110 transition-transform duration-300">
+                  <img
+                    src="/images/services/uiux.jpg"
+                    alt="UI/UX Design"
+                    className="w-full h-full object-contain p-2"
+                  />
                 </div>
               </div>
-            ))}
+              <h3 className="text-2xl font-bold mb-4 text-gray-800 dark:text-white text-center">
+                UI/UX Design
+              </h3>
+              <p className="text-gray-600 dark:text-gray-300 mb-8 text-center leading-relaxed">
+                User-centered design solutions that enhance usability and engagement.
+              </p>
+            </div>
+
+
+
+            {/* Excel Data Analysis */}
+            <Link to="/excel-data-analysis">
+              <div className="group relative bg-white/80 dark:bg-gray-800/80 backdrop-blur-lg p-8 rounded-3xl shadow-2xl border border-gray-200 dark:border-gray-700 transform hover:scale-105 hover:-rotate-1 transition-all duration-500 hover:shadow-cyan-500/30 cursor-pointer">
+                <div className="flex justify-center mb-6">
+                  <div className="w-20 h-20 rounded-full overflow-hidden bg-white group-hover:scale-110 transition-transform duration-300">
+                    <img
+                      src="/images/services/data-analysis.png"
+                      alt="Excel Data Analysis"
+                      className="w-full h-full object-contain p-2"
+                    />
+                  </div>
+                </div>
+                <h3 className="text-2xl font-bold mb-4 text-gray-800 dark:text-white text-center">
+                  Excel Data Analysis
+                </h3>
+                <p className="text-gray-600 dark:text-gray-300 mb-8 text-center leading-relaxed">
+                  Analyzing and visualizing data using Excel tools like Pivot Tables, Charts, Formulas, and Dashboards to extract meaningful insights.
+                </p>
+              </div>
+            </Link>
+
           </div>
         </div>
       </section>

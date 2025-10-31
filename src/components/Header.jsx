@@ -6,9 +6,9 @@ function Header() {
         <div>
             {/* Navigation */}
             <nav className="flex justify-between items-center p-6">
-                <img
-                    className='w-50 cursor-pointer'
-                    src="images/logo.jpg" alt="" />
+                <Link to="/">
+                    <h1 className="text-2xl font-bold  mb-2 ">Port<span className="text-cyan-500">folio</span></h1>
+                </Link>
                 <ul className="flex space-x-6">
                     <li>
                         <Link to="/" className="hover:text-purple-300 transition font-semibold">Home</Link>
